@@ -1,22 +1,26 @@
-# CLI-tool for ConoHa Object Storage.
+# CLI-tool for ConoHa OpenStack Swift Object Storage. (original : https://github.com/hironobu-s/conoha-ojs)
 
 [![Build Status](https://travis-ci.org/hironobu-s/conoha-ojs.svg?branch=travis-test)](https://travis-ci.org/hironobu-s/conoha-ojs)
 
-[ConoHaオブジェクトストレージ](https://www.conoha.jp/)を操作するためのCLIツールです。ConoHaオブジェクトストレージで使える機能を一通りサポートしています。
+A golang-implemented CLI tool for manipulating [ConoHa Swift Object Storage](https://www.conoha.jp/).
+ConoHa Swift Object Storage is configured with the OpenStack Juno version and supports the keystone auth API v2.
+It supports one of the functions available in ConoHa object storage.
+
 
 ## API
 
-オブジェクトストレージのAPIを使用するので、あらかじめ[ConoHaのコントロールパネル](https://cp.conoha.jp/)から、APIユーザを作成しておいてください。
+In order to use the object storage API, create an API user from the [control panel of ConoHa](https://cp.conoha.jp/) beforehand.
 
-## 特徴
 
-1. ConoHaオブジェクトストレージで使える機能を一通りカバーしています
-2. Goで実装されているため、実行ファイルは一つでインストールが容易です
-3. 2.と同じ理由で、Windows, MacOSX, Linuxなど、だいたいどの環境でも動作すると思います
-4. 認証情報をファイルに保持します。コマンド実行の度に認証情報を設定する必要がありません
-5. 他のOpenStack Swiftで構築されたシステムに対しても動作するかもしれません
+## Feature
 
-## インストール
+1. ConoHa Swift Object Storage is configured with OpenStack Juno (Keystone auth API v2) and is compatible with the features of swift CLI
+2. Implemented by Go-lang, one executable file is easy to install
+3. Implemented by Go-lang, it can provide executable binaries for Windows, MacOS X, Linux etc.
+4. Keep authentication information in a file. There is no need to set authentication information each time you execute a command
+5. It may also work on systems built with other OpenStack Swift
+
+## Install
 
 ### MacOSX
 
