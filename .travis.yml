@@ -10,7 +10,6 @@ script: make
 deploy:
   provider: releases
   api_key: c18fccbfc0d53f7450c39912555ec4d74d3324a6
-    secure: c18fccbfc0d53f7450c39912555ec4d74d3324a6
   file:
     - bin/windows/conoha-ojs.amd64.zip
     - bin/darwin/conoha-ojs-osx.amd64.gz
