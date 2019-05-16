@@ -9,8 +9,8 @@ before_install:
 script: make
 deploy:
   provider: releases
-  api_key:
-    secure: YPVEUZwlv4JugC6QF99CiH91SuXXmKRZJygEWSP/OK82f+rb17Bj0v+CvLi9pyTE0zG08AJkBQgK8J04D5JeD2aGPduw9WMreoXB4mQ95z94VLILUiXPQVV31kZTE7+jby+RZoOQ1N593YvrmBv00ijcGGB1NyTz0Qas2vPfZ+c=
+  api_key: c18fccbfc0d53f7450c39912555ec4d74d3324a6
+    secure: c18fccbfc0d53f7450c39912555ec4d74d3324a6
   file:
     - bin/windows/conoha-ojs.amd64.zip
     - bin/darwin/conoha-ojs-osx.amd64.gz
@@ -19,5 +19,5 @@ deploy:
   skip_cleanup: true
   on:
     tags: true
-    repo: hironobu-s/conoha-ojs
+    repo: naototty/conoha-ojs
     all_branches: true
